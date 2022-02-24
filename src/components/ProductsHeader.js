@@ -13,7 +13,7 @@ function ProductsHeader() {
 <Container>
     <Stack direction='row' justifyContent="space-between" spacing={2}>
         
-            <NavLink to='/' exact className={`text-center`}>
+            <NavLink to='/ecommerce' exact className={`text-center`}>
             <DevicesOtherIcon  />
             <Typography align='center'>Electronics</Typography>
             </NavLink>

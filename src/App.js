@@ -44,7 +44,7 @@ function App() {
 
 
 <Routes>
-  <Route exact path="/" element={<Electronics />} />
+  <Route exact path="/ecommerce" element={<Electronics />} />
   <Route exact path="/appliances" element={<KitchenAppliances />} />
   <Route exact path="/tools" element={<Tools />} />
   <Route exact path="/fitness" element={<Fitness />} />
