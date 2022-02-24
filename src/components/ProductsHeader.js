@@ -30,7 +30,7 @@ function ProductsHeader() {
             </NavLink>
             <NavLink to='/fitness' exact className={`text-center`}>
             <FitnessCenterIcon  />
-            <Typography align='center'>Fitness</Typography>
+            <Typography align='center'>Fitness test</Typography>
             </NavLink>
     </Stack>
 </Container>
