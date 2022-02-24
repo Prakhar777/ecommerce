@@ -1,0 +1,21 @@
+$themeColor:rgb(56, 56, 56);
+$colorSecondary:#01393c;
+
+.bg_theme{
+    background-color: $themeColor;
+}
+.bg_color_secondary{background-color: $colorSecondary;}
+.white{color:#fff;}
+.text-center {text-align: center;}
+
+
+.font-xl{font-size: 50px;}
+
+.flex{display: flex;}
+.flex_right{justify-content: flex-end;}
+.flex_center{justify-content: center;}
+.flex_align_center{align-items: center;}
+.h-100{height: 100%;}
+header {height: 60px;}
+
+footer li {font-size: 14px;}
