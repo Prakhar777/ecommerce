@@ -44,11 +44,11 @@ function App() {
 
 
 <Routes>
-  <Route path="/" element={<Electronics />} />
-  <Route path="/appliances" element={<KitchenAppliances />} />
-  <Route path="/tools" element={<Tools />} />
-  <Route path="/fitness" element={<Fitness />} />
-  <Route path="/signup" element={<SignupFormikYupReduced />} />
+  <Route exact path="/" element={<Electronics />} />
+  <Route exact path="/appliances" element={<KitchenAppliances />} />
+  <Route exact path="/tools" element={<Tools />} />
+  <Route exact path="/fitness" element={<Fitness />} />
+  <Route exact path="/signup" element={<SignupFormikYupReduced />} />
 </Routes>
 
 

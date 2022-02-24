@@ -13,22 +13,22 @@ function ProductsHeader() {
 <Container>
     <Stack direction='row' justifyContent="space-between" spacing={2}>
         
-            <NavLink to='/' className={`text-center`}>
+            <NavLink to='/' exact className={`text-center`}>
             <DevicesOtherIcon  />
             <Typography align='center'>Electronics</Typography>
             </NavLink>
        
        
-        <NavLink to='/appliances' className={`text-center`}>
+        <NavLink to='/appliances' exact className={`text-center`}>
             <MicrowaveIcon  />
             <Typography align='center'>Kitchen Appliances</Typography>
             </NavLink>
        
-            <NavLink to='/tools' className={`text-center`}>
+            <NavLink to='/tools' exact className={`text-center`}>
             <PrecisionManufacturingIcon  />
             <Typography align='center'>Tools</Typography>
             </NavLink>
-            <NavLink to='/fitness' className={`text-center`}>
+            <NavLink to='/fitness' exact className={`text-center`}>
             <FitnessCenterIcon  />
             <Typography align='center'>Fitness</Typography>
             </NavLink>
