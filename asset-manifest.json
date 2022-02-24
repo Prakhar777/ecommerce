@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/ecommerce/static/css/main.bfa6ba28.css",
+    "main.js": "/ecommerce/static/js/main.57075e9d.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/ecommerce/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/tools.jpg": "/ecommerce/static/media/tools.b924c36f15059143300a.jpg",
+    "static/media/02-OnePlus-9.jpg": "/ecommerce/static/media/02-OnePlus-9.e07d29537b854be941c5.jpg",
+    "static/media/fitness.jpg": "/ecommerce/static/media/fitness.dba89450c8359f303d20.jpg",
+    "static/media/homeappliances.jpg": "/ecommerce/static/media/homeappliances.8a86b98ab906642b610a.jpg",
+    "index.html": "/ecommerce/index.html",
+    "main.bfa6ba28.css.map": "/ecommerce/static/css/main.bfa6ba28.css.map",
+    "main.57075e9d.js.map": "/ecommerce/static/js/main.57075e9d.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/ecommerce/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bfa6ba28.css",
+    "static/js/main.57075e9d.js"
+  ]
+}
