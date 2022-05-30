@@ -1,51 +1,41 @@
-import { AppBar, Container, Grid, List, ListItem, StyledEngineProvider, Typography } from '@mui/material'
-import React from 'react'
-
+import {
+  AppBar,
+  Container,
+  Grid,
+  List,
+  ListItem,
+  Stack,
+  StyledEngineProvider,
+  Typography,
+} from "@mui/material";
+import React from "react";
+import CallIcon from "@mui/icons-material/Call";
 function Footer() {
   return (
     <>
-    <StyledEngineProvider injectFirst>
-    <AppBar component='footer' position='static' className={`bg_theme`}>
-    <Container >
-        <Grid container>
-            <Grid item xs={12} md={4}>
-                <Typography variant='subtitle1'>
-                    Products
+      <StyledEngineProvider injectFirst>
+        <AppBar component="footer" position="static" className={`bg_theme`}>
+          <Container>
+            <Grid container>
+              <Grid sx={{ pt: 2, pb: 2 }} item xs={12} md={12}>
+                <Typography align="center" variant="body2">
+                  Copyright &copy; 2022 | All rights reserved.
                 </Typography>
-                <List dense xs={{pt:2}} >
-                    <ListItem xs={{mb:1, p:0}}> 
-                        Product 1
-                    </ListItem>
-                    <ListItem xs={{mb:1, p:0}}> 
-                        Product 2
-                    </ListItem>
-                    <ListItem xs={{mb:1, p:0}}> 
-                        Product 3
-                    </ListItem>
-                    <ListItem xs={{mb:1, p:0}}> 
-                        Product 4
-                    </ListItem>
-                    <ListItem xs={{mb:1, p:0}}> 
-                        Product 5
-                    </ListItem>
-                </List>
+                <Typography align="center" sx={{ pt: 1 }} variant="body2">
+                  Phone Number: 8979077740 | Email:
+                  prakharvashishtha100@gmail.com
+                </Typography>
+                <Typography align="center" sx={{ pt: 1 }} variant="body2">
+                  All images used in the website belong to their respective
+                  owner. <br />
+                </Typography>
+              </Grid>
             </Grid>
-            <Grid item xs={12} md={4}>
-                <Typography variant='subtitle1'>
-                   Contact Us
-                </Typography>
-                <Typography xs={{pt:2}}  variant='body2'>
-                  8979077740
-                </Typography>
-            </Grid>
-        </Grid>
-    </Container>
-    </AppBar>
-    </StyledEngineProvider>
-    
-   
+          </Container>
+        </AppBar>
+      </StyledEngineProvider>
     </>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

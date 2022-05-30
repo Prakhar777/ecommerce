@@ -1,132 +1,74 @@
-import React, { Component } from 'react'
-import {Button, Card, CardActions, CardContent, CardMedia, Container, Grid, Typography} from '@mui/material';
+import React, { useState, useEffect } from "react";
+import {
+  Button,
+  Card,
+  CardActions,
+  CardContent,
+  CardMedia,
+  Container,
+  Grid,
+  Typography,
+} from "@mui/material";
+import axios from "axios";
+import cartLogic from "./cartLogic";
 
- class Electronics extends Component {
-     constructor(props) {
-       super(props)
-     
-       this.state = {
-          product1:require('../img/02-OnePlus-9.jpg')
-       }
-     }
-  render() {
-    return (
-      <>
-      <Container sx={{my:3}}>
+function Electronics(props) {
+  const [product1, setProducts1] = useState(require("../img/02-OnePlus-9.jpg"));
+  // const [products, setProducts] = useState([]);
+
+  // useEffect(() => {
+  //   axios
+  //     .get("https://jsonplaceholder.typicode.com/photos")
+  //     .then((response) => {
+  //       setProducts(response.data);
+  //     })
+  //     .catch((error) => {
+  //       console.log("error in fetching products");
+  //     });
+  // }, []);
+
+  // console.log(props.products);
+  return (
+    <>
+      {/* {products.map((product) => {
+        return <h4>{product.title}</h4>;
+      })} */}
+
+      <Container sx={{ my: 3 }}>
         <Grid container spacing={2}>
-            <Grid item sm={12} md={3}>
-            <Card>
-                <CardMedia component="img" image={this.state.product1} />
+          {props.products.map((product) => {
+            return (
+              <Grid key={product.id} item sm={12} md={3}>
+                <Card>
+                  <CardMedia
+                    component="img"
+                    image={`${process.env.PUBLIC_URL}/images/${product.product_img}`}
+                  />
 
-                <CardContent>
-                    <Typography variant='h4'>
-                        One Plus 9
-                    </Typography>
-                    <Typography variant='p'>
-                    Rear Triple Camera Co-Developed by Hasselblad, 48 MP Main camera, 50 MP Ultra Wide Angle Camera with Free Form Lens.
-                    </Typography>
-                </CardContent>
-                <CardActions>
-                    <Button size='small'>Buy Now</Button>
-                    <Button size='small'>Add to Wishlist</Button>
-                </CardActions>
-            </Card>
-            </Grid>
-            <Grid item sm={12} md={3}>
-            <Card>
-                <CardMedia component="img" image={this.state.product1} />
-
-                <CardContent>
-                    <Typography variant='h4'>
-                        One Plus 9
-                    </Typography>
-                    <Typography variant='p'>
-                    Rear Triple Camera Co-Developed by Hasselblad, 48 MP Main camera, 50 MP Ultra Wide Angle Camera with Free Form Lens.
-                    </Typography>
-                </CardContent>
-                <CardActions>
-                    <Button size='small'>Buy Now</Button>
-                    <Button size='small'>Add to Wishlist</Button>
-                </CardActions>
-            </Card>
-            </Grid>
-            <Grid item sm={12} md={3}>
-            <Card>
-                <CardMedia component="img" image={this.state.product1} />
-
-                <CardContent>
-                    <Typography variant='h4'>
-                        One Plus 9
-                    </Typography>
-                    <Typography variant='p'>
-                    Rear Triple Camera Co-Developed by Hasselblad, 48 MP Main camera, 50 MP Ultra Wide Angle Camera with Free Form Lens.
-                    </Typography>
-                </CardContent>
-                <CardActions>
-                    <Button size='small'>Buy Now</Button>
-                    <Button size='small'>Add to Wishlist</Button>
-                </CardActions>
-            </Card>
-            </Grid>
-            <Grid item sm={12} md={3}>
-            <Card>
-                <CardMedia component="img" image={this.state.product1} />
-
-                <CardContent>
-                    <Typography variant='h4'>
-                        One Plus 9
-                    </Typography>
-                    <Typography variant='p'>
-                    Rear Triple Camera Co-Developed by Hasselblad, 48 MP Main camera, 50 MP Ultra Wide Angle Camera with Free Form Lens.
-                    </Typography>
-                </CardContent>
-                <CardActions>
-                    <Button size='small'>Buy Now</Button>
-                    <Button size='small'>Add to Wishlist</Button>
-                </CardActions>
-            </Card>
-            </Grid>
-            <Grid item sm={12} md={3}>
-            <Card>
-                <CardMedia component="img" image={this.state.product1} />
-
-                <CardContent>
-                    <Typography variant='h4'>
-                        One Plus 9
-                    </Typography>
-                    <Typography variant='p'>
-                    Rear Triple Camera Co-Developed by Hasselblad, 48 MP Main camera, 50 MP Ultra Wide Angle Camera with Free Form Lens.
-                    </Typography>
-                </CardContent>
-                <CardActions>
-                    <Button size='small'>Buy Now</Button>
-                    <Button size='small'>Add to Wishlist</Button>
-                </CardActions>
-            </Card>
-            </Grid>
-            <Grid item sm={12} md={3}>
-            <Card>
-                <CardMedia component="img" image={this.state.product1} />
-
-                <CardContent>
-                    <Typography variant='h4'>
-                        One Plus 9
-                    </Typography>
-                    <Typography variant='p'>
-                    Rear Triple Camera Co-Developed by Hasselblad, 48 MP Main camera, 50 MP Ultra Wide Angle Camera with Free Form Lens.
-                    </Typography>
-                </CardContent>
-                <CardActions>
-                    <Button size='small'>Buy Now</Button>
-                    <Button size='small'>Add to Wishlist</Button>
-                </CardActions>
-            </Card>
-            </Grid>
+                  <CardContent>
+                    <Typography variant="h4">{product.product_name}</Typography>
+                    <Typography variant="p">{product.product_desc}</Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small">
+                      Price: &#8377;{product.product_price}
+                    </Button>
+                    <Button
+                      onClick={() => props.handleAddProduct(product)}
+                      size="small"
+                    >
+                      Add to Cart
+                    </Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+            );
+          })}
         </Grid>
       </Container>
-      </>
-    )
-  }
+    </>
+  );
 }
 
-export default Electronics
+// export default cartLogic(Electronics);
+export default Electronics;

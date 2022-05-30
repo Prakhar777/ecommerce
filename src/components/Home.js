@@ -9,8 +9,10 @@ import {
   Grid,
   Typography,
 } from "@mui/material";
+import axios from "axios";
+import cartLogic from "./cartLogic";
 
-function KitchenAppliances(props) {
+function Home(props) {
   const [product1, setProducts1] = useState(require("../img/02-OnePlus-9.jpg"));
   // const [products, setProducts] = useState([]);
 
@@ -29,12 +31,12 @@ function KitchenAppliances(props) {
   return (
     <>
       {/* {products.map((product) => {
-          return <h4>{product.title}</h4>;
-        })} */}
+        return <h4>{product.title}</h4>;
+      })} */}
 
       <Container sx={{ my: 3 }}>
         <Grid container spacing={2}>
-          {props.kitchenappliances.map((product) => {
+          {props.home.map((product) => {
             return (
               <Grid key={product.id} item sm={12} md={3}>
                 <Card>
@@ -67,5 +69,4 @@ function KitchenAppliances(props) {
     </>
   );
 }
-
-export default KitchenAppliances;
+export default cartLogic(Home);
