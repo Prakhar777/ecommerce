@@ -1,19 +1,26 @@
 {
   "files": {
-    "main.css": "/ecommerce/static/css/main.bfa6ba28.css",
-    "main.js": "/ecommerce/static/js/main.46344b86.js",
+    "main.css": "/ecommerce/static/css/main.e6e8f412.css",
+    "main.js": "/ecommerce/static/js/main.ebc239bb.js",
     "static/js/787.c4e7f8f9.chunk.js": "/ecommerce/static/js/787.c4e7f8f9.chunk.js",
-    "static/media/tools.jpg": "/ecommerce/static/media/tools.b924c36f15059143300a.jpg",
+    "static/media/banner1.jpg": "/ecommerce/static/media/banner1.ae3e0806fedf86f2f8dc.jpg",
     "static/media/02-OnePlus-9.jpg": "/ecommerce/static/media/02-OnePlus-9.e07d29537b854be941c5.jpg",
+    "static/media/banner2.jpg": "/ecommerce/static/media/banner2.0093131cf0f17fb89533.jpg",
     "static/media/fitness.jpg": "/ecommerce/static/media/fitness.dba89450c8359f303d20.jpg",
-    "static/media/homeappliances.jpg": "/ecommerce/static/media/homeappliances.8a86b98ab906642b610a.jpg",
+    "static/media/fashion.webp": "/ecommerce/static/media/fashion.9544103f924f3066531c.webp",
+    "static/media/grocery.webp": "/ecommerce/static/media/grocery.dc32070acbbdbdc07dc1.webp",
+    "static/media/toys.webp": "/ecommerce/static/media/toys.057d2275457af97de570.webp",
+    "static/media/appliances.webp": "/ecommerce/static/media/appliances.ed1816ca59bae1a751e8.webp",
+    "static/media/electronics.webp": "/ecommerce/static/media/electronics.5b0a908ea73c43706cd8.webp",
+    "static/media/home.webp": "/ecommerce/static/media/home.f257dfd9e1dca603cbe0.webp",
+    "static/media/mobile.webp": "/ecommerce/static/media/mobile.8d02dfd9c236e80cfdd9.webp",
     "index.html": "/ecommerce/index.html",
-    "main.bfa6ba28.css.map": "/ecommerce/static/css/main.bfa6ba28.css.map",
-    "main.46344b86.js.map": "/ecommerce/static/js/main.46344b86.js.map",
+    "main.e6e8f412.css.map": "/ecommerce/static/css/main.e6e8f412.css.map",
+    "main.ebc239bb.js.map": "/ecommerce/static/js/main.ebc239bb.js.map",
     "787.c4e7f8f9.chunk.js.map": "/ecommerce/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bfa6ba28.css",
-    "static/js/main.46344b86.js"
+    "static/css/main.e6e8f412.css",
+    "static/js/main.ebc239bb.js"
   ]
 }
